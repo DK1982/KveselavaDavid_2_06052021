@@ -2,3 +2,12 @@ h1
 {
     color:#0065FC
 }
+
+.grey
+{
+    color: gray
+}
+.fa, .fas
+{
+    text-decoration: none;
+}
