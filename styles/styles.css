@@ -11,3 +11,18 @@ h1
 {
     text-decoration: none;
 }
+
+figcaption
+{
+    text-decoration: none;
+    color: black
+}
+
+
+.vieuxport
+{
+    height: 600px;
+    width: 300px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: #DEEBFF;
+}
