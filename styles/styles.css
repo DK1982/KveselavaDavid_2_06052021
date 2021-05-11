@@ -17,37 +17,35 @@ body
 header
 {
     font-family: 'Raleway', sans-serif;
-    width: 80%;
-    height: 70px;
+    width: 90%;
+    height: 80px;
     display: flex;
-    flex: auto;
     flex-direction: row;
-    justify-content: space-between;
-    margin-left: 40px;
+    margin-left: 30px;
+    font-size: 1.3em;
 
+}
+
+nav
+{
+    display: flex;
+    margin-left: auto;
 }
 .navBar
 {
     display: flex;
-    width: auto;
-    margin: auto
-    padding: 50px;
+    padding: 10px;
     flex-direction: row;
     text-decoration: none;
-    font-size: 1.2em;
-}
-.navHebergements.navActivites
-{
-    margin: 50px 50px 0px 0px;
-    text-decoration: none;
-    text-align: center;
-    color: rgb(62, 62, 62)
 }
 
 .signUpHeader
 {
-    text-align: end;
-    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    color:#0065FC
+    font-weight: bold;
+    align-items: center;
 }
 
 .logo
@@ -56,7 +54,7 @@ header
 }
 .logoReservia
 {
-    align-self: left;
+    align-items: flex-end;
     width: 95px;
     height: auto;
 }
@@ -111,7 +109,8 @@ footer
 {
     display: flex;
     flex-direction: row;
-    flex: 1fr 1fr 1fr;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
     width: 100%;
     background-color: #F2F2F2;
     padding-left: 30px;
@@ -123,6 +122,7 @@ footer
 {
     flex-grow: 1;
     margin-left:30 px;
+    list-style-type: none;
 }
 
 ul
@@ -138,6 +138,7 @@ li
     margin: 10px 0px;
     margin-left: 0px;
     font-size: 0.7em;
+    
 }
 
 h1
