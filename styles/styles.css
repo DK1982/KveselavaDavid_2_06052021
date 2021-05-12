@@ -14,6 +14,11 @@ body
     margin: 0px;
 }
 
+a
+{
+    text-decoration: none;
+    color: rga(62 62 62)
+}
 header
 {
     font-family: 'Raleway', sans-serif;
@@ -150,12 +155,43 @@ main
     display: flex;
     flex-direction: row;
     max-width: 900px;
-    flex-wrap: wrap;
     justify-content: space-between;
-    font-weight: bold;
+    align-items: center;
+    font-weight: bolder;
 }
 
+#economic
+{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: auto;
+    border: 3px solid #F2F2F2;
+    border-radius: 28px;
+    padding-right: 25px;
+    align-items: center;
+}
+.economictxt
+{
+    padding-left: 15px;
+}
+.filtreIcon
+{
+    display: flex;
+    margin-right: auto;
+    height: 50px;
+    width: 50px;
+    background-color: #F2F2F2;
+    border-radius: 28px 28px 28px 28px;
+    align-items: center;
+    justify-content: center;
 
+}
+
+.blue
+{
+    color:#0065FC
+}
 .infoStat
 {
 display: flex;
@@ -181,9 +217,19 @@ p{
 
 figure
 {
+    display: flex;
     width: 200px;
     height: 160px;
     border-radius: 30px 30px 0px 0px;
+    background-color: white;
+}
+
+figure img
+{
+    width: 95%;
+    height: auto;
+    border-radius: 30px 30px 0px 0px;
+    justify-content: center;
 }
 
 #chambres
