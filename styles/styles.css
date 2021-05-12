@@ -154,13 +154,15 @@ main
 {
     display: flex;
     flex-direction: row;
-    max-width: 900px;
+    max-width: 950px;
     justify-content: space-between;
     align-items: center;
-    font-weight: bolder;
+    height: 100px;
+    align-items: center;
+    font-weight: 900;
 }
 
-#economic
+#economic, #family, #romantic, #animalsok
 {
     display: flex;
     flex-direction: row;
@@ -171,7 +173,7 @@ main
     padding-right: 25px;
     align-items: center;
 }
-.economictxt
+.economictxt, .familytxt, .romantictxt, .animalsoktxt
 {
     padding-left: 15px;
 }
@@ -185,6 +187,7 @@ main
     border-radius: 28px 28px 28px 28px;
     align-items: center;
     justify-content: center;
+    color: #0065FC
 
 }
 
