@@ -99,9 +99,18 @@ main
 
 .infoStat
 {
-    display: flex;
-    justify-content: row;
-    align-items: center;
+display: flex;
+justify-content: row;
+align-items: center;
+}
+
+p{
+    font-size: 0.9em;
+}
+.fa-info
+{
+
+    font-size: 15px;
 }
 
 .carteHebergement
