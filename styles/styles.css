@@ -100,7 +100,6 @@ main
 .fa-map-marker-alt
 {
     display: flex;
-
 }
 .mapMarkerIcon
 {
@@ -159,7 +158,7 @@ main
     align-items: center;
     height: 100px;
     align-items: center;
-    font-weight: 900;
+    font-weight: 100;
 }
 
 #economic, #family, #romantic, #animalsok
@@ -195,6 +194,10 @@ main
 {
     color:#0065FC
 }
+.grey
+{
+    color:#F2F2F2;
+}
 .infoStat
 {
 display: flex;
@@ -207,7 +210,6 @@ p{
 }
 .fa-info
 {
-
     font-size: 15px;
 }
 
