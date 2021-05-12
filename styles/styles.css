@@ -84,6 +84,54 @@ main
 {
     margin-left: 30px;
 }
+
+.searchBar
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+}
+.fa-map-marker-alt
+{
+    display: flex;
+
+}
+.mapMarkerIcon
+{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.inputSearch
+{
+    height: 50px;
+    width: 235px;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-left: 20px;
+    box-shadow:none;
+    border: 1px solid #F2F2F2;
+    outline:0;
+}
+.buttonSearch
+{
+    background-color: #0065FC;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    width: 135px;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+
+}
 .fasInfo
 {
     display: flex;
@@ -96,6 +144,17 @@ main
     color: #0065FC;
     margin-right: 15px;
 }
+
+.filtres
+{
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
 
 .infoStat
 {
