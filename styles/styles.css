@@ -22,8 +22,13 @@ header
     display: flex;
     flex-direction: row;
     margin-left: 30px;
-    font-size: 1.3em;
 
+}
+
+#logo
+{
+    display: flex;
+    margin-top: auto;
 }
 
 nav
@@ -34,29 +39,45 @@ nav
 .navBar
 {
     display: flex;
-    padding: 10px;
     flex-direction: row;
     text-decoration: none;
+    align-items: center;
+}
+
+.navItem
+{
+    padding: 10px;
+    align-items: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.navSignUp
+{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 1em;
+    color:#0065FC
+    font-weight: bold;
 }
 
 .signUpHeader
 {
     display: flex;
-    justify-content: center;
-    color:#0065FC
-    font-weight: bold;
-    align-items: center;
 }
 
-.logo
-{
-    
-}
 .logoReservia
 {
+    display: flex;
     align-items: flex-end;
     width: 95px;
     height: auto;
+}
+.navHebergements:active
+{
+    border-top: #0065FC;
+    font-size: 1.1 em
 }
 
 main
