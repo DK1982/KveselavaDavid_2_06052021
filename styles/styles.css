@@ -18,7 +18,9 @@ a
 {
     text-decoration: none;
     text-decoration-color: none;
+    color: #3b3922;
 }
+
 header
 {
     font-family: 'Raleway', sans-serif;
@@ -51,7 +53,7 @@ nav
 
 .navItem
 {
-    padding: 10px;
+    padding: 50px 35px 10px 35px;
     align-items: center;
     font-size: 1em;
     font-weight: bold;
@@ -59,7 +61,7 @@ nav
 
 .navItem:hover
 {
-    border-top: 3px;
+    border-top: solid 2px;
     border-color: #0065FC;
     font-size: 1.2em;
     color: #0065FC;
@@ -71,15 +73,15 @@ nav
 {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 50px 35px 10px 35px;
     font-size: 1em;
-    color:#0065FC
-    font-weight: bold;
 }
 
 .signUpHeader
 {
     display: flex;
+    color:#0065FC;
+    font-weight: bolder;
 }
 
 .logoReservia
@@ -89,20 +91,10 @@ nav
     width: 95px;
     height: auto;
 }
-.navHebergements:active
-{
-    border-top: #0065FC;
-    font-size: 1.1 em
-}
 
 main
 {
     margin-left: 30px;
-}
-
-h3
-{
-    font-weight: 1200;
 }
 
 .searchBar
@@ -202,7 +194,7 @@ h3
     height: 50px;
     width: 50px;
     background-color: #F2F2F2;
-    border-radius: 28px 28px 28px 28px;
+    border-radius: 27px 27px 27px 27px;
     align-items: center;
     justify-content: center;
     color: #0065FC
