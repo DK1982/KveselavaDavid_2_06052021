@@ -234,6 +234,13 @@ p{
     margin-block-end: 0.2em;
 }
 
+.hebergementAside
+{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
 /*section Hébergements*/
 
 #chambres
@@ -245,15 +252,15 @@ p{
     width: 880px;
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 40px;
 }
+
 #hebergements
 {
     width: 100%;
     justify-content: flex-start;
     font-weight: bolder;
     font-size: 1.5em;
-    padding-top: 10px;
+    margin: 50px 0 0 40px
 }
 
 #cartesH
@@ -263,6 +270,7 @@ p{
     gap: 30px;
     max-width: 800px;
     height: 430px;
+    margin: 0px 40px;
 }
 
 .carteHebergement
@@ -272,8 +280,8 @@ p{
 
 figure
 {
-    width: 250px;
-    height: 200px;
+    width: 240px;
+    height: 190px;
     padding: 5px;
     border-radius: 30px 30px 30px 30px;
     background-color: white;
@@ -323,8 +331,10 @@ h3{
     width: 100%;
     justify-content: flex-start;
     font-weight: bold;
+    margin: 0px 0px 45px 40px;
 }
 
+/*section Aside*/
 aside
 {
     display: grid;
@@ -335,7 +345,36 @@ aside
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    border-radius: 20px;
 }
+
+.titrePopulaires
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartePopulaires
+{
+    display: flex;
+    flex-direction: row;
+    flex: 1 2;
+    width: 345px;
+    min-height: 145px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.imgAside
+{
+    height: 200px;
+    width: 125px;
+}
+
+
+/*Footer - bas de la page*/
 
 footer
 {
