@@ -1,14 +1,7 @@
-
-body
+#bloc-page
 {
     font-family: 'Raleway', sans-serif;
     width: 100%;
-    margin-left: 0px;
-
-}
-
-#bloc-page
-{
     text-align: left;
     align-content: flex-start;
     margin: 0px;
@@ -17,7 +10,6 @@ body
 a
 {
     text-decoration: none;
-    text-decoration-color: none;
     color: #3b3922;
     padding: 0px;
 }
@@ -164,7 +156,6 @@ main
 .infoStat
 {
 display: flex;
-justify-content: row;
 align-items: center;
 margin-bottom: 20px;
 }
@@ -275,41 +266,46 @@ p{
 
 .carteHebergement
 {
+    display: flex;
+    flex-direction: column;
+    flex: 2 1;
     padding: 0px;
-}
-
-figure
-{
     width: 240px;
     height: 190px;
     padding: 5px;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 25px 25px 25px 25px;
     background-color: white;
-    display: block;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    
 }
 
-figure img
+.figure
+{    
+    height: 115px;
+    overflow: hidden;
+
+}
+
+.figure img
 {
+    border-radius: 25px 25px 0px 0px;
     width: 100%;
-    height: 65%;
-    border-radius: 30px 30px 0px 0px;
+    height: auto;
+    object-fit: cover;
     justify-content: center;
+    align-self: center;
+    
 }
 
 .captionH
 {
     margin-left: 15px;
-    font-size: 0.9em;
+    font-size: 15px;
 }
 
 h4
 {
-    margin-block-start: 0.1em;
-    margin-block-end: 0.2em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
     font-weight: bolder;
 }
 
@@ -319,8 +315,8 @@ h4
 }
 
 h3{
-    margin-block-start: 0.5em;
-    margin-block-end: 0.4em;
+    margin-block-start: 10px;
+    margin-block-end: 8px;
     font-weight: bolder;
 }
 
@@ -337,15 +333,19 @@ h3{
 /*section Aside*/
 aside
 {
-    display: grid;
-    grid-template-columns: repeat(1, 345px);
+
     width: 420px;
     height: 620px;
     background-color: #F2F2F2;
-    align-items: center;
-    flex-direction: column;
     justify-content: center;
     border-radius: 20px;
+}
+
+.cartesGrid
+{
+    display: grid;
+    grid-template-columns: repeat(1, 345px);
+    margin: 20px 30px 25px 30px
 }
 
 .titrePopulaires
@@ -369,7 +369,7 @@ aside
 
 .imgAside
 {
-    height: 200px;
+    height: auto;
     width: 125px;
 }
 
@@ -392,7 +392,8 @@ footer
 .footer
 {
     flex-grow: 1;
-    margin-left:30 px;
+    margin-left: 30px;
+    padding-top: 30px;
     list-style-type: none;
 }
 
@@ -408,7 +409,7 @@ li
     list-style-type: none;
     margin: 10px 0px;
     margin-left: 0px;
-    font-size: 0.7em;
+    font-size: 15px;
     
 }
 
@@ -421,8 +422,7 @@ li
 
 .vieuxport
 {
-    height: 600px;
+    height: auto;
     width: 300px;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: #DEEBFF;
 }
