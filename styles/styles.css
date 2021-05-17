@@ -282,24 +282,21 @@ p{
 {    
     height: 115px;
     overflow: hidden;
-
+    object-fit: contain;
 }
 
 .figure img
 {
     border-radius: 25px 25px 0px 0px;
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    justify-content: center;
-    align-self: center;
-    
+    height: 100%;
 }
 
 .captionH
 {
     margin-left: 15px;
     font-size: 15px;
+    margin-top: 10px;
 }
 
 h4
@@ -333,7 +330,6 @@ h3{
 /*section Aside*/
 aside
 {
-
     width: 420px;
     height: 620px;
     background-color: #F2F2F2;
@@ -345,7 +341,10 @@ aside
 {
     display: grid;
     grid-template-columns: repeat(1, 345px);
-    margin: 20px 30px 25px 30px
+    height: 470px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    gap: 30px;
 }
 
 .titrePopulaires
@@ -354,23 +353,85 @@ aside
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 50px 50px 25px 30px;
 }
 
-.cartePopulaires
+.fa-chart-line
+{
+    font-size: 20px;
+}
+
+.populaires
 {
     display: flex;
     flex-direction: row;
-    flex: 1 2;
+    background-color: white;
     width: 345px;
-    min-height: 145px;
-    padding: 5px;
-    border-radius: 30px;
+    height: 140px;
+    border-radius: 25px;
+}
+
+.cartePopulaire
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    margin-right: 50px;
+    border-radius: 25px;
+    background-color: white;
 }
 
 .imgAside
 {
     height: auto;
-    width: 125px;
+    width: 130px;
+    border-radius: 25px 0 0 25px;
+    margin: 5px;
+}
+
+/*Activité*/
+
+#activitesmarseille
+{
+    margin-top: 50px;
+}
+
+#activites
+{
+    width: 100%;
+    text-align: left;
+    margin-left: 50px;
+}
+.activites
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 45px;
+    width: 1345px;
+    height: 650px;
+}
+
+.vieuxport
+{
+    flex: 1;
+    height: 300px;
+    width: 300px;
+}
+
+figure
+{
+    width: 100%;
+    height: 100%;
+}
+figure img
+{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -420,9 +481,4 @@ li
 }
 
 
-.vieuxport
-{
-    height: auto;
-    width: 300px;
-    border-radius: 20px 20px 20px 20px;
-}
+
