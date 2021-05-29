@@ -16,7 +16,7 @@ a
 header
 {
     width: 100%;
-    height: 80px;
+    height: 60px;
     display: flex;
     flex-direction: row;
     margin-left: 30px;
@@ -44,7 +44,7 @@ nav
 
 .navItem
 {
-    padding: 50px 35px 10px 35px;
+    padding: 30px 35px 0px 35px;
     align-items: center;
     font-size: 1em;
     font-weight: bold;
@@ -64,7 +64,7 @@ nav
 {
     display: flex;
     align-items: center;
-    padding: 50px 35px 10px 35px;
+    padding: 30px 35px 0px 35px;
     font-size: 1em;
 }
 
@@ -104,8 +104,8 @@ main
 .mapMarkerIcon
 {
     display: flex;
-    width: 50px;
-    height: 50px;
+    min-width: 50px;
+    min-height: 50px;
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
     align-items: center;
@@ -213,7 +213,7 @@ main
     height: 60px;
     width: auto;
     border: 3px solid #0065FC;
-    border-radius: 32px;
+    border-radius: 35px;
     background-color: #F2F2F2;
 }
 span:hover
@@ -260,8 +260,8 @@ span:hover
 
 p{
     font-size: 0.9em;
-    margin-block-start: 0.2em;
-    margin-block-end: 0.2em;
+    /*margin-block-start: 0.2em;
+    margin-block-end: 0.2em;*/
 }
 
 .hebergementAside
@@ -342,8 +342,8 @@ p{
 
 h4
 {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+    /*margin-block-start: 0em;
+    margin-block-end: 0em;*/
     font-weight: bolder;
 }
 
@@ -353,8 +353,8 @@ h4
 }
 
 h3{
-    margin-block-start: 10px;
-    margin-block-end: 8px;
+    /*margin-block-start: 10px;
+    margin-block-end: 8px;*/
     font-weight: bolder;
 }
 
@@ -407,7 +407,7 @@ aside
     display: flex;
     flex-direction: row;
     background-color: white;
-    width: 345px;
+    width: 100%;
     height: 140px;
     border-radius: 25px;
     box-shadow: 10px 10px 20px #bbbaba;
@@ -446,7 +446,7 @@ aside
 {
     width: 100%;
     text-align: left;
-    margin-left: 50px;
+    margin-left: 30px;
     margin-bottom: 25px;
 }
 
@@ -615,11 +615,323 @@ li
     
 }
 
-
 .fa, .fas
 {
     text-decoration: none;
 }
 
+@media all and (max-width: 550px)
+
+#bloc-page
+{
+    width: 100%;
+    margin: auto;
+}
+
+
+/*Header avec logo, navigation et s'inscrire*/
+header
+{
+    height: auto;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+nav
+{
+    order: 2;
+    margin-left: 0;
+    width: 100%;
+}
+.navBar
+{
+    order: 2;
+    flex: 1;
+    width: 100%;
+    margin: 0;
+}
+
+.navItem
+{
+    flex: 1;
+    padding: 30px 20px 10px 20px;
+    text-align: center;
+    border-bottom: solid 3px ;
+    border-color: #F2F2F2;
+}
+
+.navItem:hover
+{
+    border-bottom: solid 3px;
+    border-top: none;
+    border-color: #0065FC;
+    font-size: 1.2em;
+}
+
+.navHebergements, .navActivites
+{
+    text-align: center;
+    align-self: center;
+    align-content: center;
+}
+
+
+.logoReservia
+{
+margin-left: 15px;
+}
+
+main
+{
+margin: auto;
+width: 100%;
+}
+
+/*recherche*/
+
+.searchBar
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.search1
+{
+    display: block;
+    background-color: #0065FC;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    height: 50px;
+    width: 50px;
+    max-width: 80px;
+    min-width: 50px;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+}
+.buttonSearch
+{
+    display: none;
+}
+
+
+/*les filtres*/
+.filtres
+{
+    max-width: 480px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+
+#filtreTitle
+{
+    width: 100%;
+}
+
+
+#economic:hover, #family:hover, #romantic:hover, #animalsok:hover
+{
+    height: 60px;
+    width: auto;
+    border: 3px solid #0065FC;
+    border-radius: 32px;
+    background-color: #F2F2F2;
+}
+span:hover
+{
+    font-size: 1.2em;
+}
+
+/*paragraphe d'information*/
+.fasInfo
+{
+    width: 25px;
+    height: 25px;
+    border: 2px solid #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+    color: #0065FC;
+    margin-right: 15px;
+}
+
+.infoStat
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*les couleurs des stars*/
+.blue
+{
+    color:#0065FC
+}
+.grey
+{
+    color:#F2F2F2;
+}
+
+
+p{
+    font-size: 0.9em;
+    /*margin-block-start: 0.2em;
+    margin-block-end: 0.2em;*/
+}
+
+.hebergementAside
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*section Hébergements*/
+
+#chambres
+{
+    align-items: center;
+    margin: auto;
+    height: auto;
+    width: 100%;
+    max-width: 470px;
+    background-color: white;
+}
+
+#hebergements
+{
+    justify-content: center;
+    margin: 0px auto;
+    text-align: left;
+    padding: 20px;
+}
+
+#cartesH
+{
+    display: grid;
+    grid: repeat(6, auto)/ repeat(1, auto);
+    gap: 20px;
+    max-width: 480px;
+    height: auto;
+    margin: auto;
+}
+.carteHebergement
+{
+    display: flex;
+    flex-direction: column;
+    /*flex: 1 2;*/
+    /*width: auto;*/
+    max-width: 480px;
+    height: 190px;
+    padding: 5px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: white;
+    box-shadow: 10px 10px 20px #bbbaba;
+}
+
+
+.figure
+{    
+    /*width: auto;*/
+    max-width: 480px;
+    height: 120px;
+}
+
+.more
+{
+    margin: 20px 0px 45px 30px;
+    padding-top: 20px;
+}
+
+/*section Aside*/
+aside
+{
+    order: -1;
+    width: 100%;
+    height: 620px;
+    border-radius: 0;
+}
+
+.cartesGrid
+{
+    display: grid;
+    grid-template-columns: repeat(1, 345px);
+    gap: 20px;
+}
+
+.titrePopulaires
+{
+    margin: 30px 30px 25px 30px;
+}
+
+.populaires
+{
+    width: 100%;
+}
+
+/*Activité*/
+
+.activites
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.vieuxPort, .calanques, .notreDame, .longchamp, .pomegues, .frioul
+{
+    width: 360px;
+    height: 190px;
+}
+
+.figurevieuxPort, .figureCalenques, .figurePomegues, .figureFrioul, .figureGarde, .figureLongchamp
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 140px;
+
+.figurevieuxPort img, .figureCalenques img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.figureFrioul img, .figurePomegues img, .figureGarde img, .figureLongchamp img
+{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*Footer - bas de la page*/
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F2F2F2;
+    margin-left: 0;
+    padding-left: 0;
+
+}
+
+.footer
+{
+    flex-grow: 1;
+    padding-top: 30px;
+    list-style-type: none;
+    margin-left: 0;
+} 
+    
 
 
