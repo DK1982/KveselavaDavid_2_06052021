@@ -33,7 +33,7 @@ a
 /*Header avec logo, navigation et s'inscrire*/
 header
 {
-    width: 100%;
+    width: auto;
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -605,7 +605,7 @@ footer
     flex-direction: row;
     flex: 1 1 auto;
     flex-wrap: wrap;
-    width: 100%;
+    width: auto;
     background-color: #F2F2F2;
     padding-left: 30px;
 
