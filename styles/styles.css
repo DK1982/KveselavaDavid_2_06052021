@@ -1,16 +1,15 @@
-/*@media screen and (min-width: 1025px){*/
 body
 {
     width: 100%;
-    margin: 0px;
+    margin: 0px auto;
     padding: 0px;
 }
 
 #bloc-page
 {
-font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -33,11 +32,11 @@ a
 /*Header avec logo, navigation et s'inscrire*/
 header
 {
-    width: auto;
+    width: 95%;
     height: 60px;
     display: flex;
     flex-direction: row;
-    margin-left: 30px;
+    margin: 0 auto;
 
 }
 
@@ -106,7 +105,10 @@ nav
 
 main
 {
-margin-left: 30px;
+    width: 95%;
+    margin: 0 auto;
+    /*padding-left: 30px;
+    padding-right: 30px;*/
 }
 
 /*recherche*/
@@ -283,6 +285,8 @@ p{
 {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    max-width: 1440px;
     gap: 40px;
 }
 
@@ -294,7 +298,7 @@ p{
     flex-direction: column;
     justify-content: space-between;
     height: 620px;
-    width: 880px;
+    max-width: 100%;
     background-color: #f2f2f2;
     border-radius: 20px;
 }
@@ -305,7 +309,7 @@ p{
     justify-content: flex-start;
     font-weight: bolder;
     font-size: 1.4em;
-    margin: 50px 0 0 40px;
+    margin: 40px 0 0 40px;
 }
 
 #cartesH
@@ -313,7 +317,7 @@ p{
     display: grid;
     grid: repeat(2, 1fr)/ repeat(3, 1fr);
     gap: 30px;
-    max-width: 800px;
+    /*max-width: 800px;*/
     height: 430px;
     margin: 0px 40px;
 }
@@ -323,7 +327,7 @@ p{
     display: flex;
     flex-direction: column;
     flex: 2 1;
-    width: 240px;
+    min-width: 180px;
     height: 190px;
     padding: 5px;
     border-radius: 25px 25px 25px 25px;
@@ -384,7 +388,7 @@ h3{
 /*section Aside*/
 aside
 {
-    width: 420px;
+    width: 100%;
     height: 620px;
     background-color: #F2F2F2;
     justify-content: center;
@@ -406,14 +410,14 @@ aside
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 345px;
+    width: auto;
     align-items: center;
     margin: 40px 40px 15px 40px;
 }
 
 .fa-chart-line
 {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .populaires
@@ -435,6 +439,7 @@ aside
     justify-content: space-between;
     width: auto;
     height: auto;
+    min-width: 140px;
     padding: 10px;
     border-radius: 25px;
     background-color: white;
@@ -443,8 +448,7 @@ aside
 .titrePopulaire1
 {
     font-weight: bolder;
-    font-size: 1.4em;
-    margin: 20px 0 0 0;
+    font-size: 1.4em;S
 }
 
 .imgAside
@@ -466,7 +470,7 @@ aside
 {
     width: 90%;
     text-align: left;
-    margin-left: 30px;
+    margin-left: 0px;
     margin-bottom: 25px;
 }
 
@@ -474,7 +478,7 @@ aside
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    max-width: 1340px;
+    max-width: 1440px;
     gap: 40px;
     margin-bottom: 60px;
 }
@@ -482,7 +486,7 @@ aside
 {
     display: flex;
     flex-direction: column;
-    Width: 300px;
+    width: auto;
     height: 450px;
     border-radius: 20px;
     box-shadow: 10px 10px 20px #F2F2F2;
@@ -509,7 +513,7 @@ aside
 {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: auto;
     height: 250px;
     border-radius: 20px;
     box-shadow: 10px 10px 20px #F2F2F2;
@@ -530,7 +534,7 @@ aside
 {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: auto;
     height: 170px;
     margin-top: 30px;
     border-radius: 20px;
@@ -566,7 +570,7 @@ aside
 {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: auto;
     height: 210px;
     border-radius: 20px;
     box-shadow: 10px 10px 20px #F2F2F2;
@@ -605,14 +609,15 @@ footer
     flex-direction: row;
     flex: 1 1 auto;
     flex-wrap: wrap;
-    width: auto;
+    width: 100%;
     background-color: #F2F2F2;
-    padding-left: 30px;
+    /*padding-left: 30px;*/
 
 }
 
 .footer
 {
+    margin-left: 30px;
     flex-grow: 1;
     padding-top: 30px;
     list-style-type: none;

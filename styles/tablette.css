@@ -1,14 +1,15 @@
-@media all and (min-width: 481px) and (max-width: 1124px)
+@media all and (min-width: 571px) and (max-width: 1124px)
 {
     header
     {
         margin-left: 0;
-        width: auto;
+        width: 95%;
         padding-left: 20px;
     }
     main
     {
-        margin-left: 0;
+        width: 100%;
+        margin: 0 auto;
     }
     /*recherche*/
     .searchBar
@@ -193,6 +194,11 @@
     }
 
     /*Activité*/
+
+    #activites
+    {
+        margin: 0 20px 20px 20px;
+    }
 
     .activites
     {
